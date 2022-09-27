@@ -26,7 +26,7 @@ function Homepage() {
 					borderRadius: "24.8462px"
 			}}></div>
 			<Link to='/create'>
-				<button className='btn' sx={{width: "187px", height: "50px"}}>
+				<button className='btn'>
 					🎉 Create my event
 				</button>
 			</Link>
