@@ -2,11 +2,10 @@ export default {
     fonts: {
       body: 'Helvetica, sans-serif',
       heading: 'Helvetica, sans-serif',
-      monospace: 'Menlo, monospace',
     },
     colors: {
       background: '#F6F2FF',
-      
+
       primary1: '#240D57',
       primary2: '#240D57',
       primary3: '#240D57',
