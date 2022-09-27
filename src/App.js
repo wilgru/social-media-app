@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+  Link
+} from "react-router-dom";
+
+import { ThemeProvider } from 'theme-ui'
+import theme from './theme'
+
+import Homepage from './pages/Homepage';
+import Create from './pages/Create';
+import Event from './pages/Event';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Homepage/>}>
+            </Route>
+            <Route path="/create" element={<Create/>}>
+            </Route>
+            <Route path="/event" element={<Event/>}>
+            </Route>
+          </Routes>
+        </Router>
+      </div>
+    </ThemeProvider>
   );
 }
 
