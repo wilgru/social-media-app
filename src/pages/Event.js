@@ -1,7 +1,6 @@
 /** @jsxImportSource theme-ui */
 
 import InfoBlock from "../components/InfoBlock";
-
 import img_event_0 from '../img_event_0.png'
 
 function Event() {
@@ -31,8 +30,8 @@ function Event() {
 					flexDirection: "column",
 					gap: "16px"
 				}}>
-					<InfoBlock line1={"placeholder1"} line2={"placeholder2"}/>
-					<InfoBlock line1={"placeholder1"} line2={"placeholder2"}/>
+					<InfoBlock type="time" line1={"18 August 6:00PM"} line2={"19 August 1:00PM"}/>
+					<InfoBlock type="location" line1={"Street name"} line2={"Suburb, State, Postcode"}/>
 				</div>
 			</div>
 		</div>
