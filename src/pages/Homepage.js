@@ -4,7 +4,7 @@ import {
 
 function Homepage() {
 	return (
-		<div id="homepage">
+		<div className="container" id="homepage">
 			<header>
 				<h1>
 					Imagine if <br></br> 
