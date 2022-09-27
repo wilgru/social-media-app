@@ -1,5 +1,6 @@
 html {
   background-color: #F6F2FF;
+  font-family: 'Helvetica';
 }
 
 .container {
@@ -11,26 +12,15 @@ html {
   height: 100%;
 }
 
-#homepage {
-  margin-top: 94px;
-  gap: 10px;
-}
-
-#homepage header {
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 16px;
-  
-  /* position: absolute;
-  width: 321px;
-  height: 160px;
-  left: calc(50% - 321px/2); */
 }
 
 h1 {
-  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -44,7 +34,6 @@ h1 {
 
 h2 {
   width: 100%;
-  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -60,7 +49,6 @@ h3 {
   width: 321px;
   height: 36px;
   
-  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -75,7 +63,6 @@ h3 {
 
 h4 {
   width: 100%;
-  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -95,23 +82,11 @@ h4 {
   text-fill-color: transparent;
 }
 
-#homepage-preview-img {
-  background: url(./img_home_0.png);
-  background-position: center;
-  background-size: cover;
-
-  width: 165.63px;
-  height: 292px;
-  filter: drop-shadow(0px 0px 33.1283px rgba(0, 0, 0, 0.05));
-  border-radius: 24.8462px;
-}
-
 .btn {
   border: none;
   background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
   border-radius: 10px;
 
-  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -120,7 +95,3 @@ h4 {
   color: #FFFFFF;
 }
 
-#create-event-btn {
-  width: 187px;
-  height: 50px;
-}
