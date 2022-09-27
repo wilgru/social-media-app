@@ -1,7 +1,11 @@
 /** @jsxImportSource theme-ui */
 import arrowSVG from '../arrow.svg';
+import calSVG from '../calendar.svg';
+import locationSVG from '../location.svg';
 
 function InfoBlock(props) {
+
+	const typeIsDate = props.type === "time"
 
 	return (
 		<div sx={{display: "flex", gap: "20px"}}>
@@ -17,7 +21,13 @@ function InfoBlock(props) {
 				background: "#FFFFFF",
 				boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.1)",
 				borderRadius: "10px",
-			}}></div>
+			}}>
+				{typeIsDate ? (
+					<img src={calSVG}></img>
+				) : (
+					<img src={locationSVG}></img>
+				)}
+			</div>
 			
 			<div sx={{
 				display: "flex",
@@ -29,7 +39,7 @@ function InfoBlock(props) {
 					width: "100%",
 					fontFamily: "'Helvetica'",
 					fontStyle: "normal",
-					fontWeight: "400",
+					fontWeight: "700",
 					fontSize: "14px",
 					lineHeight: "16px",
 				}}>
@@ -45,7 +55,15 @@ function InfoBlock(props) {
 					fontSize: "14px",
 					lineHeight: "16px",
 				}}>
-					to <span sx={{fontWeight: "700"}}>{props.line2}</span> UTC +10
+					{typeIsDate ? (
+						<>
+							to <span sx={{fontWeight: "700"}}>{props.line2}</span> UTC +10
+						</>
+					) : (
+						<>
+							{props.line2}
+						</>
+					)}
 				</h4>
 			</div>
 
