@@ -2,15 +2,18 @@ html {
   background-color: #F6F2FF;
 }
 
-#homepage {
-  margin-top: 94px;
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
 
   height: 100%;
+}
+
+#homepage {
+  margin-top: 94px;
+  gap: 10px;
 }
 
 #homepage header {
@@ -26,7 +29,7 @@ html {
   left: calc(50% - 321px/2); */
 }
 
-#homepage header h1 {
+h1 {
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
@@ -34,13 +37,26 @@ html {
   line-height: 36px;
 
   margin: 0;
-
   text-align: center;
 
   color: #240D57; 
 }
 
-#homepage header h3 {
+h2 {
+  width: 100%;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+
+  margin: 0;
+  text-align: left;
+
+  color: #240D57;
+}
+
+h3 {
   width: 321px;
   height: 36px;
   
@@ -55,6 +71,20 @@ html {
   text-align: center;
   
   color: #4F4F4F;
+}
+
+h4 {
+  width: 100%;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  margin: 0;
+  text-align: left;
+
+  color: #828282;
 }
 
 .highlight-title {
