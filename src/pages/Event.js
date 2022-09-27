@@ -1,10 +1,8 @@
 /** @jsxImportSource theme-ui */
-
 import InfoBlock from "../components/InfoBlock";
 import img_event_0 from '../img_event_0.png'
 
 function Event() {
-
 	return (
 		<div className="container" id="event">
 			<div sx={{

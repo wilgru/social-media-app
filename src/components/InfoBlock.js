@@ -4,7 +4,6 @@ import calSVG from '../calendar.svg';
 import locationSVG from '../location.svg';
 
 function InfoBlock(props) {
-
 	const typeIsDate = props.type === "time"
 
 	return (

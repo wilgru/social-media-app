@@ -1,11 +1,7 @@
 /** @jsxImportSource theme-ui */
-
-import {
-  Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Create() {
-
 	const input = {
 		border: "0",
 		display: "flex",
